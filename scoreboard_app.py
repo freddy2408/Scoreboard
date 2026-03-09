@@ -57,3 +57,7 @@ st.dataframe(score[["rank","pid_short","total_points","total_msgs"]], use_contai
 me = score[score["participant_id"] == pid]
 if not me.empty:
     st.success(f"Dein Rang: #{int(me['rank'].iloc[0])}")
+
+st.markdown("**Für Prolific-Teilnehmer**")
+st.write("Code: C1FXYW8X")
+st.markdown("[Link zu Prolific](https://app.prolific.com/submissions/complete?cc=C1FXYW8X)")
